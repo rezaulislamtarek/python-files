@@ -14,7 +14,7 @@ def display_entries_in_directory(directory):
     print("------------------------Scandir Call-----------------------------")
     with os.scandir(directory) as entries:
         for entry in entries:
-            print(entry.name)
+            print("Name of entry: ", entry.name)
 
 
 if __name__ == "__main__":
